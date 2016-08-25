@@ -15,6 +15,6 @@ Contributing ist gerne gesehen, bitte hierbei folgende Regeln beachten:
 * Überarbeitung der nightly als Branch nightly-XXX
 
 Die nightly wird vom Entwicklungsserver immer um 00:00 gepullt und stellt somit die erste, 
-instabile alpha dar (Versionsnummer 0.0.X). Beim Erreichen von Milstones wird diese in den 
+instabile alpha dar (Versionsnummer 0.0.X). Beim Erreichen von Milestones wird dieser in den 
 development-Branch gemerged und erreicht damit beta-Status (Versionsnummer 0.X.X). Ist dieser merge erfolgt,
 erhöht sich auch die Versionsnummer der nightly (z.B. 0.1.X).
