@@ -12,5 +12,8 @@
  */
 
 return [
-    // ...
+    'db' => [
+        'driver' => 'Pdo_Mysql',
+        'database' => 'rocommunity',
+    ],
 ];
