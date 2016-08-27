@@ -3,10 +3,6 @@ body {
     padding-bottom: 40px;
 }
 
-.zf-green {
-    color: #68b604;
-}
-
 .btn-success {
     background-color: #57a900;
     background-image: -moz-linear-gradient(top, #70d900, #57a900);
@@ -30,4 +26,57 @@ div.container a.navbar-brand > img {
     display: inline;
     margin-right: 4px;
     margin-top: -2px;
+}
+
+.navbar-rocom {
+    /* background-image: linear-gradient(to bottom, #003366 0px, #3843AF 100%); */
+    background-color: #003366;
+    background-repeat: repeat-x;
+}
+
+.nav > li.active,
+.nav > li > a:focus, 
+.nav > li > a:hover {
+    background-color: #FFAE00;
+}
+
+.navbar-brand, 
+.navbar-nav > li > a {
+    text-shadow: none;
+    color: #FFFFFF;
+}
+
+.navbar-rocom .navbar-toggle {
+    border-color: #999999;
+}
+
+.navbar-rocom .navbar-toggle .icon-bar {
+    background-color: #FFFFFF;
+}
+
+.btn-rocom {
+	color: #FFFFFF;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #E5A803;
+	*background-color: #E5A803;
+	background-image: -moz-linear-gradient(top, #FFAE00, #E5A803);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFAE00), to(#E5A803));
+	background-image: -webkit-linear-gradient(top, #FFAE00, #E5A803);
+	background-image: -o-linear-gradient(top, #FFAE00, #E5A803);
+	background-image: linear-gradient(to bottom, #FFAE00, #E5A803);
+	background-repeat: repeat-x;
+	border-color: #E5A803;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFAE00', endColorstr='#E5A803', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-rocom:hover,
+.btn-rocom:focus,
+.btn-rocom:active,
+.btn-rocom.active,
+.btn-rocom.disabled,
+.btn-rocom[disabled] {
+	color: #FFFFFF;
+	background-color: #E5A803;
+	*background-color: #003bb3;
 }

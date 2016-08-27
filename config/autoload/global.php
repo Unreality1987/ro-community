@@ -16,4 +16,21 @@ return [
         'driver' => 'Pdo_Mysql',
         'database' => 'rocommunity',
     ],
+    'navigation' => [
+        'default' => [
+            [
+                'label' => 'Home',
+                'route' => 'home',
+            ],
+            [
+                'label' => 'News',
+                'route' => 'news',
+            ],
+        ],
+    ],
+    'service_manager' => [
+         'factories' => [
+             'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',
+         ],
+     ], 
 ];
