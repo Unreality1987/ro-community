@@ -14,6 +14,16 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        return new ViewModel();
+        $viewModel = new ViewModel();
+        
+        // TODO: check if user is logged in and authorized
+        $testVar = false;
+        
+        if (!$testVar) {
+            $viewModel->setTemplate('application/index/guest');
+            return $viewModel;
+        }
+                
+        return $viewModel;
     }
 }
