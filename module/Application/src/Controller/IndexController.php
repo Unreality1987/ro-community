@@ -20,6 +20,7 @@ class IndexController extends AbstractActionController
         $testVar = false;
         
         if (!$testVar) {
+            $this->layout('layout/guest');
             $viewModel->setTemplate('application/index/guest');
             return $viewModel;
         }

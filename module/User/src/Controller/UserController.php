@@ -24,4 +24,30 @@ class UserController extends AbstractActionController
                 
         return $viewModel;
     }
+    
+    public function loginAction() {
+        
+    }
+    
+    public function logoutAction() {
+        
+    }
+    
+    public function registerAction() {
+        
+    }
+    
+    public function deleteAction() {
+        
+    }
+    
+    public function changePasswordAction() {
+        
+    }
+    
+    public function changeEmailAction() {
+        
+    }
+    
+    
 }

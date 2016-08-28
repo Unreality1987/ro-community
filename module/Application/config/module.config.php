@@ -24,16 +24,6 @@ return [
                     ],
                 ],
             ],
-            'application' => [
-                'type'    => Segment::class,
-                'options' => [
-                    'route'    => '/application[/:action]',
-                    'defaults' => [
-                        'controller' => Controller\IndexController::class,
-                        'action'     => 'index',
-                    ],
-                ],
-            ],
         ],
     ],
     'controllers' => [
@@ -49,6 +39,7 @@ return [
         'exception_template'       => 'error/index',
         'template_map' => [
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
+            'layout/guest'            => __DIR__ . '/../view/layout/guest.phtml',
             'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
             'application/index/guest' => __DIR__ . '/../view/application/index/guest.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',

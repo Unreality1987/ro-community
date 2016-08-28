@@ -39,34 +39,15 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <?= $this->navigation('navigation')->menu()->setUlClass('nav navbar-nav'); ?>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-users" aria-hidden="true"></i> <span class="nav-badge">1</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-bell" aria-hidden="true"></i> <span class="nav-badge">3</span>
-                            </a>  
-                        </li>
-                        <li>    
-                            <a href="#">    
-                                <i class="fa fa-envelope" aria-hidden="true"></i> <span class="nav-badge">5</span> 
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-user" aria-hidden="true"></i> Unreality <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#"><i class="fa fa-user"></i> Profil</a></li>
-                                <li><a href="#"><i class="fa fa-cog"></i> Einstellungen</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" placeholder="Benutzername" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Passwort" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-rocom">Login</button>
+                    </form>
                 </div>
             </div>
         </nav>
