@@ -98,3 +98,17 @@ div.container a.navbar-brand > img {
 .container {
     width: 90%;
 }
+
+.dropdown-menu {
+    background-color: #003366;
+}
+
+.dropdown-menu > li > a {
+    color: #FFFFFF;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: #FFAE00;
+    background-image: none;
+    color: #FFFFFF;
+}
