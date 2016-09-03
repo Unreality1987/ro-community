@@ -29,6 +29,11 @@ return [
             ],
         ],
     ],
+    'service_manager' => [
+        'factories' => [
+            Model\NewsTable::class => Model\NewsTableFactory::class,
+        ],
+    ],    
     'view_manager' => [
         'template_path_stack' => [
             'news' => __DIR__ . '/../view',

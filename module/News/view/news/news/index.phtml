@@ -1,71 +1,22 @@
+<?php $this->headTitle($title); ?>
 <h2>Development Tagebuch</h2>
 
-<div class="row">
-    <div class="col-md-12">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title">User Modul</h3>
-            </div>
-            <div class="panel-body">
-                Die Vorbereitungen für das User Modul sind im vollem Gange. Das Modul stellt die Funktionen rund um den Account
-                bereit, wie zum Beispiel Login / Logout.
-            </div>
-            <div class="panel-footer">
-                <i>Unreality - 28.08.2016</i>
-            </div>
-        </div>        
-    </div>
-</div>
+<?php foreach ($news as $entry) : ?>
 
 <div class="row">
     <div class="col-md-12">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <h3 class="panel-title">Navigation und Farben</h3>
+                <h3 class="panel-title"><?= $entry->title ?></h3>
             </div>
             <div class="panel-body">
-                Diesesmal haben wir das Navigationsmodul installiert und getestet. 
-                Die Navigation ist schon soweit einsatzfähig, dass die ersten Modulseiten angelegt werden können.
+                <?= $entry->content ?>
             </div>
             <div class="panel-footer">
-                <i>Unreality - 27.08.2016</i>
+                <i><?= $entry->author ?> - <?= date('d.m.Y', strtotime($entry->datetime)) ?></i>
             </div>
         </div>        
     </div>
 </div>
 
-<div class="row">
-    <div class="col-md-12">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title">Erste Module und View</h3>
-            </div>
-            <div class="panel-body">
-                Heute haben wir die ersten Module zur Ausarbeitung hinzugefügt. Die Liste ist noch nicht komplett,
-                aber die erste Ausrichtung des modularen Baukastens ist durchgeführt. Der erste Systemtest mit dem Frontend
-                verlief (wie ihr sehen könnt) positiv. 
-            </div>
-            <div class="panel-footer">
-                <i>Unreality - 25.08.2016</i>
-            </div>
-        </div>        
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-12">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title">Setup</h3>
-            </div>
-            <div class="panel-body">
-                Startschuss zur Entwicklung der Ro-Community OpenSource. 
-                Heute haben wir nach langer Technologieauswahl den Grundstein für eine 
-                zügige Entwicklung der Community gelegt. Ihr könnt den Fortschritt täglich hier mitverfolgen.
-            </div>
-            <div class="panel-footer">
-                <i>Unreality - 21.08.2016</i>
-            </div>
-        </div>        
-    </div>
-</div>
+<?php endforeach; ?>
